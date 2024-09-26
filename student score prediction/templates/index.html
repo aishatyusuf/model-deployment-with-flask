@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Score Predicition</title>
+</head>
+<body>
+<h1>Student Score Prediction</h1>
+<form action="/predict" method='POST'>
+<p>
+<label for="Hours_Studied">Number of Hours Studied</label><br>
+<input type="number" name="input1">
+
+<p>
+<label for="Sleep_Hours">Sleep Hours</label><br>
+<input type="number" name="input2">
+
+
+<p><button type="submit">Predict</button></p>
+</form>
+
+<br>
+<br>
+{{ prediction_text }}
